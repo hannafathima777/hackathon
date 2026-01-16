@@ -22,3 +22,13 @@ export async function getEmissionResults() {
   }
   return response.json();
 }
+
+export async function fetchAnalytics() {
+  const response = await fetch(`${API_URL}/analytics`);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch analytics");
+  }
+
+  return response.json();
+}

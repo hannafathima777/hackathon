@@ -100,4 +100,26 @@ li {
 li.high {
   color: #f87171;
   font-weight: bold;
+
+.analytics-card {
+  transition: transform 0.3s ease;
 }
+
+.analytics-card:hover {
+  transform: translateX(10px);
+  border-left: 4px solid #00ff96 !important;
+  background: rgba(0, 255, 150, 0.03) !important;
+}
+
+/* Red alert for high impact items in the report */
+.remedy-alert {
+  color: #ff4444;
+  font-weight: bold;
+  animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}}
